@@ -2,7 +2,7 @@
 
 @Author: Akhouad-me
 @URL: http://www.akhouad.me
- 
+
 This file contains the styling for the actual theme, this
 is the file you need to edit to change the look of the
 theme.
@@ -23,7 +23,7 @@ theme.
 	9.  Testimonials styles
 	10. clients styles
 	11. Blog styles
-	
+
 */
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700); /* Montserrat font */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800); /* Open sans font */
@@ -53,6 +53,9 @@ section{
 }
 .white-section{
 	background-color:#fff;
+}
+.blue-section{
+	background-color:#1e59de;
 }
 .light-gray-section{
 	background-color: #efeff0;
@@ -134,7 +137,7 @@ ul.social-icons li a:hover{
 }
 .section-title span:after{
 	content: "";
-	background-color: #7beec7;
+	background-color: #1e59de;
 	position: absolute;
 	top:20px;
 	left:0;
@@ -262,6 +265,10 @@ ul.social-icons li a{
 .btn.white{
 	background-color: #fff;
 	color:#7beec7;
+}
+.btn.blue{
+	background-color: #fff;
+	color:#1e59de;
 }
 @media (max-width: 991px) {
 	.btn{
@@ -518,12 +525,19 @@ footer.main-footer nav.footer-nav ul li a{
 	    -ms-transform:translate(-50%, -50%);
 	        transform:translate(-50%, -50%);
 }
-.site-hero .small-title{
+.site-hero .small-title-blue{
+	color:#ffffff;
+	padding: 7px 12px;
+	background-color: #1e59de;
+	display: inline-block;
+}
+.site-hero .small-title-green{
 	color:#60606e;
 	padding: 7px 12px;
 	background-color: #7beec7;
 	display: inline-block;
 }
+
 .site-hero .big-title{
 	font-size: 48px;
 	color:#60606e;
@@ -686,7 +700,7 @@ footer.main-footer nav.footer-nav ul li a{
 .portfolio_item .portfolio_item_hover .item_info em{
 	font-style: normal;
 	font-weight: 700;
-	display: inline-block; 
+	display: inline-block;
 	background-color: #7beec7;
 	padding: 5px;
 	color:white;
@@ -916,11 +930,11 @@ footer.main-footer nav.footer-nav ul li a{
 	top:0;
 	right: 0;
 
-	width: 0; 
-	height: 0; 
+	width: 0;
+	height: 0;
 	border-left: 10px solid transparent;
 	border-right: 0px solid transparent;
-	
+
 	border-top: 10px solid #7beec7;
 }
 .pricing_plan:hover{
@@ -932,14 +946,14 @@ footer.main-footer nav.footer-nav ul li a{
 }
 .pricing_plan .plan_title{
 	font-size: 30px;
-} 
+}
 .pricing_plan .plan_price{
 	background-color: #7beec7;
 	padding: 5px 20px;
 	color:white;
 	font-size: 14px;
 	display: inline-block;
-} 
+}
 .pricing_plan ul{
 	margin: 50px 0;
 }
@@ -977,7 +991,7 @@ footer.main-footer nav.footer-nav ul li a{
 	font-family: "Montserrat", sans-serif;
 	font-weight: 700;
 	font-size: 12px;
-	color:#60606e;	
+	color:#60606e;
 	text-transform: uppercase;
 	-webkit-transition:all .2s ease-in-out .2s;
 	transition:all .2s ease-in-out .2s;
