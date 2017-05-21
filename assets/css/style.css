@@ -191,7 +191,7 @@ ul.list li:before{
 	content: '\f374';
 	position: absolute;
 	left: 0;
-	color:#7beec7;
+	color:#156273;
 }
 /*list 2*/
 ul.list_2 li{
@@ -620,6 +620,32 @@ footer.main-footer nav.footer-nav ul li a{
 	color:#fff;
 }
 .site-hero_3 .page-title .small-title{font-size: 14px;}
+
+/*Project site hero*/
+
+.site-hero_proj{
+	background: url("../img/site-heroproj.jpg") no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 500px;
+	width: 100%;
+	position: relative;
+}
+.site-hero_proj .page-title{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	-webkit-transform:translate(-50%, -50%);
+	    -ms-transform:translate(-50%, -50%);
+	        transform:translate(-50%, -50%);
+	text-align: center;
+}
+.site-hero_proj .page-title .big-title{
+	font-size: 56px;
+	color:#156273;
+}
+.site-hero_proj .page-title .small-title{font-size: 14px;}
+
 
 .agency{
 	width: 100%;
