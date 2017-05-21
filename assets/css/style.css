@@ -46,7 +46,10 @@ body{
 
 /* ##### 00 : GENERAL  ##### */
 section{
-	margin-top: 150px;
+	margin-top: 50px;
+}
+section2{
+	margin-top: 20px;
 }
 .green-section{
 	background-color:#7beec7;
@@ -120,7 +123,7 @@ ul.social-icons li a:hover{
 /*section's title*/
 .section-title{
 	width: 50%;
-	margin: 0 auto 100px;
+	margin: 0 auto 5px;
 	text-align: center;
 }
 .section-title span{
@@ -130,14 +133,26 @@ ul.social-icons li a:hover{
 	font-weight: 700;
 	font-size: 30px;
 	text-transform: uppercase;
-	color:#60606e;
+	color:#156273;
 	position: relative;
 	display: inline-block;
 	margin-bottom: 20px;
 }
+.section-title span2{
+	position: relative;
+	z-index: 1;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: 24px;
+	text-transform: uppercase;
+	color:#60606e;
+	position: relative;
+	display: inline-block;
+	margin-bottom: 0px;
+}
 .section-title span:after{
 	content: "";
-	background-color: #1e59de;
+	background-color: #fff;
 	position: absolute;
 	top:20px;
 	left:0;
@@ -531,6 +546,12 @@ footer.main-footer nav.footer-nav ul li a{
 	background-color: #1e59de;
 	display: inline-block;
 }
+.site-hero .small-title-turq{
+	color:#ffffff;
+	padding: 7px 12px;
+	background-color: #156273;
+	display: inline-block;
+}
 .site-hero .small-title-green{
 	color:#60606e;
 	padding: 7px 12px;
@@ -569,7 +590,10 @@ footer.main-footer nav.footer-nav ul li a{
 	        transform:translate(-50%, -50%);
 	text-align: center;
 }
-.site-hero_2 .page-title .big-title{font-size: 36px;}
+.site-hero_2 .page-title .big-title{
+	font-size: 56px;
+	color:#fff;
+}
 .site-hero_2 .page-title .small-title{font-size: 14px;}
 
 
@@ -605,6 +629,7 @@ footer.main-footer nav.footer-nav ul li a{
 	font-size: 36px;
 }
 .services .services-left .service-title{
+	color:#156273;
 	font-size: 18px;
 	margin-bottom: 20px;
 	display: inline-block;
@@ -1063,16 +1088,16 @@ footer.main-footer nav.footer-nav ul li a{
 	text-align: center;
 }
 .clients div[class^="col"]{
-	margin-bottom: 30px;
+	margin-bottom: 15px;
 }
-.clients div[class^="col"]:nth-last-child(-n+3){margin-bottom: 0}
+.clients div[class^="col"]:nth-last-child(-n+3){margin-bottom: 15s}
 @media (max-width: 767px) {
 	.clients div[class^="col"]:first-child{margin-top: 30px}
-	.clients div[class^="col"]:nth-last-child(-n+3){margin-bottom: 30px}
+	.clients div[class^="col"]:nth-last-child(-n+3){margin-bottom: 15px}
 }
 @media (min-width: 768px) and (max-width: 991px) {
 	.clients div[class^="col"]:first-child{margin-top: 30px}
-	.clients div[class^="col"]:nth-last-child(-n+3){margin-bottom: 30px}
+	.clients div[class^="col"]:nth-last-child(-n+3){margin-bottom: 15px}
 }
 .clients_single img{
 	max-width: 100%;
