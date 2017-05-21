@@ -596,6 +596,27 @@ footer.main-footer nav.footer-nav ul li a{
 }
 .site-hero_2 .page-title .small-title{font-size: 14px;}
 
+.site-hero_3{
+	background: url("../img/site-hero3.jpg") no-repeat;
+	background-size: cover;
+	height: 500px;
+	width: 100%;
+	position: relative;
+}
+.site-hero_3 .page-title{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	-webkit-transform:translate(-50%, -50%);
+	    -ms-transform:translate(-50%, -50%);
+	        transform:translate(-50%, -50%);
+	text-align: center;
+}
+.site-hero_3 .page-title .big-title{
+	font-size: 56px;
+	color:#fff;
+}
+.site-hero_3 .page-title .small-title{font-size: 14px;}
 
 .agency{
 	width: 100%;
