@@ -285,6 +285,12 @@ ul.social-icons li a{
 	background-color: #fff;
 	color:#1e59de;
 }
+
+.btn.turq{
+	background-color: #156273;
+	color:#fff;
+}
+
 @media (max-width: 991px) {
 	.btn{
 		margin: 20px 0;
