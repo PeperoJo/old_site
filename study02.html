@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Improving Venmo Split Pay</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <!-- Google fonts - Montserrat for headings, Cardo for copy-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Cardo:400,400italic,700">
+
+
+
+
+
+
+
+    <!-- more Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR:200,300,400,500,600,700,900&display=swap&subset=korean&effect=anaglyph" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap" rel="stylesheet">
+    <!-- Lightbox-->
+    <link rel="stylesheet" href="vendor/lightbox2/css/lightbox.min.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/favicon.png">
+    <!-- Leaflet CSS - For the map-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css">
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.5.4/plyr.css" />
+
+  </head>
+  <body>
+    <!-- about end-->
+    <!-- Start of portfolio-->
+
+    <!-- hci deskfinder -->
+    <!-- <div class="row">
+      <div class="alert alert-warning img-center" role="alert">
+        Please view from desktop Chrome. Currently, there are issues with Safari and iOS browser as well as Firefox.
+      </div>
+    </div> -->
+    <section id="text" class="text-page ">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="title02">venmo</div>
+                <h5 class="heading">split pay the right way</h5>
+              </div>
+            </div>
+
+
+
+            <div class="row justify-content-md-center spacer">
+              <div class="col-md-12 col-lg-8">
+                <div class="container description">
+                  Venmo. It is the most popular mobile payment app. It has recently gotten better with the introduction of Venmo Card and its Split Pay feature.
+                  The feature's purpose is to make split payments easier, but sometimes it can be complicated in moments when not everyone has eaten in the same amounts.
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+              <img src="img/projects/study02/1-Venmo.png" alt="" class="img-fluid img-center roundedIMG">
+              <blockquote class="text-center">
+                <footer class="blockquote-footer">Venmo loading page</footer>
+              </blockquote>
+              </div>
+            </div>
+
+
+            <div class="row justify-content-md-center spacer">
+              <div class="col-md-12 col-lg-8">
+                <div class="container description">
+                  <h6 class="heading">What is the problem?</h6>
+                  Venmo automatically splits the bill evenly among a group of selected people. However, consider when someone says that they ate less or someone ate more than others.
+                  The overall cost changes differently as you can see in the example below. Although the total cost does get reflected in the sticky tab, it does not display
+                  the remaining cost until the user goes to the final payment review where it displays the remaining cost in a small grayed out font. It is not efficient when users
+                  have to go back and forth between the two pages.
+                  </thead>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+              <img src="img/projects/study02/2-Current.png" alt="" class="img-fluid img-center roundedIMG">
+              <blockquote class="text-center">
+                <footer class="blockquote-footer">How Venmo Split Pay is used</footer>
+              </blockquote>
+              </div>
+            </div>
+
+            <div class="row justify-content-md-center spacer">
+              <div class="col-md-12 col-lg-8">
+                <div class="container description">
+                  Shown below are some of the common feedbacks from users of the Venmo Split Pay feature. I asked 15 college students who utilized the Venmo card to provide feedback on the feature. It does not matter whether the users are college student or not, but the demographic of Venmo users are in higher education.
+                  It seemed like there needed to be an improvement for the Split Pay feature
+                  that would make the feature more efficient. Most of the issues came from how users had to split payments for uneven meals as well as visualizing how the bill is split.
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+              <img src="img/projects/study02/3-affinity.png" alt="" class="img-fluid img-center roundedIMG">
+              <blockquote class="text-center">
+                <footer class="blockquote-footer">Feedback on Venmo Split Pay</footer>
+              </blockquote>
+              </div>
+            </div>
+
+            <div class="row justify-content-md-center spacer">
+              <div class="col-md-12 col-lg-8">
+                <div class="container description">
+                  <h6 class="heading">Seeing how others do it</h6>
+                    As of now, split payment seems to be a rare feature. It sure would be nice to be seen in other monetary applications.
+                    I looked into how other banking applications displayed money being divided into different segments. The main two options were pie charts and stacked bar graphs.
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+              <img src="img/projects/study02/4-others.png" alt="" class="img-fluid img-center roundedIMG">
+              <blockquote class="text-center">
+                <footer class="blockquote-footer">How other applications display divided bill</footer>
+              </blockquote>
+              </div>
+            </div>
+
+            <div class="row justify-content-md-center spacer">
+              <div class="col-md-12 col-lg-8">
+                <div class="container description">
+                  <h6 class="heading">UI Elements + Limitations</h6>
+                  Before going into brainstorming and sketching ideas, I first looked into what UI elements needed to be kept, edited, and added. Most were either kept or added.
+                  I also checked if there were any limitations, and one that came across my path was the space. Because of the top navigation bar and the keypad that are always displayed on this page, I had to be aware of the space constraint.
+                  </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+              <img src="img/projects/study02/5-UI.png" alt="" class="img-fluid img-center roundedIMG">
+              <blockquote class="text-center">
+                <footer class="blockquote-footer">Split Pay UI Elements</footer>
+              </blockquote>
+              </div>
+            </div>
+
+            <div class="row justify-content-md-center spacer">
+              <div class="col-md-12 col-lg-8">
+                <div class="container description">
+                  <h6 class="heading">Ideating + Prototyping: Visual Metric</h6>
+                    I first decided to tackle the visual metric portion as it seemed like layout of the page and UI elements heavily depends on the visual metric. I sketched different variations of the pie chart graph as well as stacked bar graph.
+                    As you can see, the graph takes up a big portion of the available space.
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+              <img src="img/projects/study02/6-sketch.png" alt="" class="img-fluid img-center roundedIMG">
+              <blockquote class="text-center">
+                <footer class="blockquote-footer">Sketching different ideas for the visual metric</footer>
+              </blockquote>
+              </div>
+            </div>
+
+
+            <div class="row justify-content-md-center spacer">
+              <div class="col-md-12 col-lg-8">
+                <div class="container description">
+                  <ol type="A">
+                    <li>Traditional pie chart with profile pictures to signify which portion belongs to whom. It also displays remaining cost on top.</li>
+                    <br>
+                    <li>Similar to traditional pie char, but it has a hole in the middle, thus saving space and giving room for the remaining cost to be displayed there.</li>
+                    <br>
+                    <li>Horizontal stacked bar graph with possibly color to marking individual payments.</li>
+                    <br>
+                    <li>Vertical stacked bar graph. The individual payment informations are lined up with the bar.</li>
+
+                  </ol>
+                  <br><br>
+                  I decided to select option C as it saves a lot of space compared to options A and B while still providing the same feature. Option D is also nice but it is only when everyone can be fitted into the whole page.
+                  It provides another design hurdle in the case the list has to be scrolled, which means that the bar would also be scrolled. This would lose the purpose in providing a general view for comparision to overall bill and to each other.
+                  <br> <br><br>
+                  Once selecting option C, I realized there were more layout options available within that option.
+
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+              <img src="img/projects/study02/7-sketch.png" alt="" class="img-fluid img-center roundedIMG">
+              <blockquote class="text-center">
+                <footer class="blockquote-footer">Different layout options for total and remaining costs.</footer>
+              </blockquote>
+              </div>
+            </div>
+
+
+            <div class="row justify-content-md-center spacer">
+              <div class="col-md-12 col-lg-8">
+                <div class="container description">
+                  <ol type="A">
+                    <li>Original horizontal stacked bar.</li>
+                    <br>
+                    <li>Combined stacked bar with total cost metrics aligned to bottom.</li>
+                    <br>
+                    <li>Combined stacked bar with total cost metrics aligned to top.</li>
+                  </ol>
+                  <br><br>
+                  Compared to option A, option B and C seemed more organized and fitting to combine metrics of total cost and remaining cost. I ended up selecting option B as the layout is similar to how information is displayed in the next page. Like a receipt, the information is displayed at the very bottom.
+
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+              <img src="img/projects/study02/8-lofi.png" alt="" class="img-fluid img-center roundedIMG">
+              <blockquote class="text-center">
+                <footer class="blockquote-footer">Ways of marking the bar</footer>
+              </blockquote>
+              </div>
+            </div>
+
+
+            <div class="row justify-content-md-center spacer">
+              <div class="col-md-12 col-lg-8">
+                <div class="container description">
+                  In order for users to understand the stacked bar, they need keys to correlate different parts to different individuals. I decided to use colors as that was a minimalist approach. I chose to apply the colors to name badges as it was easier to see than profile borders and dot markers.
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+              <img src="img/projects/study02/9-lofi.png" alt="" class="img-fluid img-center roundedIMG">
+              <blockquote class="text-center">
+                <footer class="blockquote-footer">Different ways of applying colors</footer>
+              </blockquote>
+              </div>
+            </div>
+
+
+            <div class="row justify-content-md-center spacer">
+              <div class="col-md-12 col-lg-8">
+                <div class="container description">
+                  Because the point of colors is to mark different segments to individuals, it is important that they are distinct, not similar. The hues must be different in order to them to be easily distinguished apart.
+                  However, the colors must also fit in with the primary and secondary colors of the Venmo brand for a better visual harmony.
+                  <br><br><br><b>Engineering perspective:</b> Since random colors can not be selected, developers must be provided a palette of random colors that they can select from. The palette should have a finite number of colors (around 20~ colors) since that is the maximum number of split pay individuals.
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+              <img src="img/projects/study02/10-color.png" alt="" class="img-fluid img-center roundedIMG">
+              <blockquote class="text-center">
+                <footer class="blockquote-footer">Color Selection for Venmo</footer>
+              </blockquote>
+              </div>
+            </div>
+
+
+            <div class="row justify-content-md-center spacer">
+              <div class="col-md-12 col-lg-8">
+                <div class="container description">
+                  The colors above is an example of such palette. The example is hand picked from a set of colors generated by a site called coolors.co. Below is a high fidelity prototype with the color palette applied to the stacked bar and name badges.
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+              <img src="img/projects/study02/11-hifi.png" alt="" class="img-fluid img-center roundedIMG">
+              <blockquote class="text-center">
+                <footer class="blockquote-footer">High Fidelity Prototype of Stacked Bar</footer>
+              </blockquote>
+              </div>
+            </div>
+
+
+            <div class="row justify-content-md-center spacer">
+              <div class="col-md-12 col-lg-8">
+                <div class="container description">
+                  <h6 class="heading">Ideating + Prototyping: Remaining Cost Allocation</h6>
+                  I next tackled dealing with remaining cost allocation. Upon user feedbacks, there had to be a better method of dividing up any remaining cost. Consider this scenario: everyone just notifies the main payer just the cost of their food items, no tax or tip included.
+                  The main payer would have to calculate dividing up the remaining cost proportionately to evenly distribute what would be the cost of tax and tip.
+
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+              <img src="img/projects/study02/13-sketch.png" alt="" class="img-fluid img-center roundedIMG">
+              <blockquote class="text-center">
+                <footer class="blockquote-footer">Options for dividing up remaining cost</footer>
+              </blockquote>
+              </div>
+            </div>
+
+
+            <div class="row justify-content-md-center spacer">
+              <div class="col-md-12 col-lg-8">
+                <div class="container description">
+                  It is very tedious, especially on a smartphone on which you have to go back and forth between the app and a typical 4-function calculator.
+                  Why not directly include the ability to divide the cost proportionately? Or maybe just dividing it up fairly into even amounts. Or maybe none. Just leave the option to the user.
+                  <br><br><br><ol type="A">
+                    <li>Remaining cost division placed in action sheet.</li>
+                    <br>
+                    <li>Remaining cost division placed in segment controller.</li>
+                  </ol>
+                  <br><br>Another potential option was a button that would lead to a different page with the options. However, it seemed best to provide the options within view of the stacked bar as to see payment changes, and option B was the best at doing so.
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+              <img src="img/projects/study02/14-hifi.png" alt="" class="img-fluid img-center roundedIMG">
+              <blockquote class="text-center">
+                <footer class="blockquote-footer">High Fidelity Prototype of 'Split Remaining'</footer>
+              </blockquote>
+              </div>
+            </div>
+
+
+            <div class="row justify-content-md-center spacer">
+              <div class="col-md-12 col-lg-8">
+                <div class="container description">
+                  <h6 class="heading">Final Prototype</h6>
+                    Study and tests on whether the new Split Pay improved user experience will be coming soon. But for now, here is the Split Pay page in layers.
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+              <img src="img/projects/study02/15-final.png" alt="" class="img-fluid img-center roundedIMG">
+              <blockquote class="text-center">
+                <footer class="blockquote-footer">Updated Split Pay in Layers</footer>
+              </blockquote>
+              </div>
+            </div>
+
+            <div class="row justify-content-md-center spacer">
+              <div class="col-md-12 col-lg-8">
+                <div class="container description">
+                  This is a demonstration of the updated Split Pay. In the video, the user is clicking on the 'Split Remaining' button to reveal the segment controllers. Here the user can switch between the three options.
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+              <img src="img/projects/study02/venmo_demo.gif" alt="" class="img-fluid img-center roundedIMG">
+              <blockquote class="text-center">
+                <footer class="blockquote-footer">Demonstration</footer>
+              </blockquote>
+              </div>
+            </div>
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <footer class="">
+    <footer class="section-inverse">
+      <div class="container">
+        <div class="row copyright">
+          <div class="col-md-6">
+            <p class="mb-md-0 text-center text-md-left">&copy;2019 Your name/company goes here</p>
+          </div>
+          <div class="col-md-6">
+            <p class="credit mb-md-0 text-center text-md-right">Template by <a href="https://bootstrapious.com/p/how-to-build-a-working-bootstrap-contact-form">Bootstrapious</a></p>
+          </div>
+        </div>
+      </div>
+    </footer> -->
+    <!-- JavaScript files-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+    <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
+    <script src="vendor/lightbox2/js/lightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js"> </script>
+    <script src="https://cdn.plyr.io/3.5.4/plyr.js"></script>
+    <script>
+        const player1 = new Plyr('#player1');
+        const player2 = new Plyr('#player2');
+        const player3 = new Plyr('#player3');
+
+    </script>
+  </body>
+</html>
