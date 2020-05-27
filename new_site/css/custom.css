@@ -37,7 +37,7 @@
 /*FILTER*/
 
 .filter-row {
-  margin-top: 7.5%;
+  margin-top: 60px;
   margin-bottom: 0%;
   margin-left: -15%;
   margin-right: -15%
@@ -119,4 +119,9 @@
 .quoteClass {
   margin-top: 10%;
   margin-bottom: 10%
+}
+
+.footer {
+  margin-top: 5%;
+  margin-bottom: 5%
 }
