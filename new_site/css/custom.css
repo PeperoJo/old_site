@@ -1,3 +1,11 @@
+/*TARGET*/
+/*:target {
+  display: block;
+  position: relative;
+  top: -50px;
+  visibility: hidden;
+}*/
+
 /*ABOUT */
 
 .about-row {
@@ -6,24 +14,17 @@
 }
 
 .desc1 {
-  font-family: 'Montserray', sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  /*text-transform: uppercase;*/
-}
-
-.desc2 {
-  font-family: 'Montserray', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   font-size: 15px;
   /*text-transform: uppercase;*/
 }
 
-.name {
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
-  font-size: 45px;
-  padding-bottom: 15px;
+.desc2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  /*text-transform: uppercase;*/
 }
 
 .header {
@@ -37,7 +38,7 @@
 
 .filter-row {
   margin-top: 7.5%;
-  margin-bottom: 10%;
+  margin-bottom: 0%;
   margin-left: -15%;
   margin-right: -15%
 
@@ -49,7 +50,7 @@
   padding: 0 25px;
   color: #454549;
   text-align: center;
-  font-family: 'Montserray', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 11px;
   font-weight: 600;
   line-height: 38px;
@@ -71,4 +72,51 @@
 .filter-btn.active {
   background-color: #010101;
   color: white;
+}
+
+/*PROJECT*/
+
+.project-row {
+  padding-top: 10%;
+  /*padding-bottom: 10%;*/
+  background-color: ;
+  display:none
+}
+
+.show {
+  display: block;
+}
+
+.project-title {
+  /*same as .header*/
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 35px;
+  padding-bottom: 10px;
+}
+
+.project-header {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  font-style: bold;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.project-desc {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  /*text-transform: uppercase;*/
+}
+
+.project-divider {
+  width: 80%;
+  margin-top: 10%
+}
+
+.quoteClass {
+  margin-top: 10%;
+  margin-bottom: 10%
 }
