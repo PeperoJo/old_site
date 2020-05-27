@@ -90,7 +90,8 @@
 /*PROJECT*/
 
 .project-row {
-  padding-top: 10%;
+  /*padding-top: 10%;*/
+  padding-top: 95px;
   /*padding-bottom: 10%;*/
   display:none
 }
@@ -125,7 +126,8 @@
 
 .project-divider {
   width: 80%;
-  margin-top: 10%
+  /*margin-top: 10%;*/
+  margin-top: 95px;
 }
 
 .project-buttons {
