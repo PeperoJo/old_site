@@ -20,8 +20,10 @@
 }
 
 .about-row {
-  margin-top: 25%;
-  margin-bottom: 20%;
+  /*margin-top: 25%;
+  margin-bottom: 20%;*/
+  margin-top: 250px;
+  margin-bottom: 125px;
 }
 
 .desc1 {
