@@ -127,12 +127,16 @@
 .project-divider {
   width: 80%;
   /*margin-top: 10%;*/
-  margin-top: 95px;
+  margin-top: 115px;
 }
 
 .project-buttons {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.action-btn {
+  padding-right: 10px;
 }
 
 .img-center {
@@ -141,12 +145,23 @@
   display: block;
 }
 
+.img-rounded {
+  border-radius: 4px !important;
+
+}
+
 .quoteClass {
   margin-top: 10%;
   margin-bottom: 10%
 }
 
+
 .footer {
   margin-top: 5%;
   margin-bottom: 5%
+}
+
+.plyr{
+    border-radius: 4px;
+    margin: 20px auto;
 }

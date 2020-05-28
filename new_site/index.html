@@ -28,6 +28,8 @@
     <!-- Custom -->
     <link rel="stylesheet" href="css/custom.css">
 
+    <!-- video player -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.5.4/plyr.css" />
 
 
   </head>
@@ -75,7 +77,7 @@
             I'm Joseph Han
           </div>
           <div class="desc1">
-            I am currently a developer at 👨🏻‍🎨<a href="https://www.vsapartners.com/">VSA Partners</a>. I previously worked at 🐔<a href="https://www.chick-fil-a.com/">Chick-fil-A</a> and 🔬<a href="http://m-lab.cse.nd.edu/">M-Lab</a>. I recently graduated from 🍀<a href="https://www.nd.edu/">University of Notre Dame</a> '20 with a B.S. in Computer Science. I love problem solving and thinking outside of the box to develop creative solutions.
+            I am currently a developer at 👨🏻‍🎨 <a href="https://www.vsapartners.com/">VSA Partners</a>. I previously worked at 🐔 <a href="https://www.chick-fil-a.com/">Chick-fil-A</a> and 🔬<a href="http://m-lab.cse.nd.edu/">M-Lab</a>. I recently graduated from 🍀 <a href="https://www.nd.edu/">University of Notre Dame</a> '20 with a B.S. in Computer Science. I love problem solving and thinking outside of the box to develop creative solutions.
           </div>
         </div>
       </div>
@@ -110,64 +112,46 @@
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
           </div>
           <div class="project-buttons">
-            <button class="filter-btn " onclick=""> All</button>
-            <button class="filter-btn" onclick=""> UI/UX</button>
-            <button class="filter-btn" onclick=""> Dev</button>
+            <a class="action-btn" href="">github</a>
+            <a class="action-btn" href="">case study</a>
+            <a class="action-btn" href="">view more</a>
           </div>
         </div>
 
         <div class="col-sm-6 align-self-center">
-          <img src="spark3.png" alt="" class="img-fluid img-center">
+          <img src="spark3.png" alt="" class="img-fluid img-rounded img-center">
         </div>
 
         <hr class="project-divider">
       </div>
 
 
-      <div class="project-row row typeUIUX justify-content-center">
-        <div class="project-col col-sm-6 .col-lg-5">
+      <div class="project-row row typeDESIGN justify-content-center">
+        <div class="project-col col-sm-6 align-self-center">
           <div class="project-title">
-            UIUX1Designitletitletitle
+            Designitletitletitle
           </div>
           <div class="project-header">
             Header header header
           </div>
           <div class="project-desc">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </div>
+          <div class="project-buttons">
+            <a class="action-btn" href="">github</a>
+            <a class="action-btn" href="">case study</a>
+            <a class="action-btn" href="">view more</a>
           </div>
         </div>
+
+        <div class="col-sm-6 align-self-center">
+          <div id="player1" data-plyr-config='{ "controls":["play-large"] }' data-plyr-provider="youtube" data-plyr-embed-id="PaCzTv-gPG4"></div>
+        </div>
+
         <hr class="project-divider">
       </div>
 
-      <div class="project-row row typeDEV">
-        <div class="project-col col-sm-6">
-          <div class="project-title">
-            DEV1Designitletitletitle
-          </div>
-          <div class="project-header">
-            Header header header
-          </div>
-          <div class="project-desc">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          </div>
-        </div>
-        <hr class="project-divider">
-      </div>
-
-      <div class="project-row row typeUIUX">
-        <div class="project-col col-sm-6">
-          <div class="project-title">
-            UIUX2Designitletitletitle
-          </div>
-          <div class="project-header">
-            Header header header
-          </div>
-          <div class="project-desc">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          </div>
-        </div>
-        <hr class="project-divider">
-      </div>
 
 
       <!--  END OF PROJECTS -->
@@ -199,4 +183,11 @@
   <!-- filter script -->
   <script src="filter.js"></script>
 
+
+  <script src="https://cdn.plyr.io/3.5.4/plyr.js"></script>
+  <script>
+      const player1 = new Plyr('#player1');
+      const player2 = new Plyr('#player2');
+      const player3 = new Plyr('#player3');
+  </script>
 </html>
