@@ -2,7 +2,12 @@
 <html lang="en">
   <head>
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(window).load(function() {
+          $(".loader").fadeOut("slow");
+      });
+    </script>
 
 
     <!-- Required meta tags -->
@@ -35,12 +40,7 @@
     <!-- video player -->
     <link rel="stylesheet" href="https://cdn.plyr.io/3.5.4/plyr.css" />
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script type="text/javascript">
-      $(window).load(function() {
-          $(".loader").fadeOut("slow");
-      });
-    </script>
+
 
 
   </head>
@@ -48,10 +48,6 @@
   <!-- <body onload="document.body.style.opacity='1'"> -->
 
   <body>
-
-    <!-- <div id="loading">
-      <img id="loading-image" src="img/load.gif" alt="Loading..." />
-    </div> -->
     <div class="loader"></div>
 
     <!-- NAV BAR -->
