@@ -15,8 +15,9 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -73,7 +74,7 @@
                   <a class="nav-link" href="about.html">About</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="#projects">Work</a>
+                  <a class="nav-link" href="index.html#projects">Work</a>
               </li>
               <li class="nav-item">
                   <a target="_blank" class="nav-link" href="https://drive.google.com/file/d/1WAEdYGcKTEJmNb9-tLpz8JZdTMr_UTg7/view?usp=sharing">Résumé</a>
@@ -95,20 +96,20 @@
       <div class="about-row row">
         <div class="about-col col-sm-6">
           <div class="desc1">
-            Hello World,
+            Welcome to
           </div>
           <div class="header">
-            I'm Joseph Han
+            My past projects
           </div>
           <div class="desc1">
-            I am currently a UX engineer intern at 👨🏻‍🎨 <a class="inlink" target="_blank" href="https://www.vsapartners.com/">VSA Partners</a> with past experiences at 🐔 <a class="inlink" target="_blank" href="https://www.chick-fil-a.com/">Chick-fil-A Corporate</a> and 🔬<a class="inlink" target="_blank" href="http://m-lab.cse.nd.edu/">Mobile Computing Lab (M-Lab)</a>. I recently graduated from 🍀 <a class="inlink" target="_blank" href="https://www.nd.edu/">University of Notre Dame</a> '20 with a B.S. in Computer Science and focus in product design. I love problem solving and thinking outside of the box to develop creative, efficient solutions! 🧩
+            Before focusing on UI/UX, I was interested in a wide range of creativity, ranging from development to design. This is a compilation of my past projects featuring different sorts of explorations. There are coding works from hackathons, mix of interesting design ideas, and miscellaneous side projects.
           </div>
           <div class="project-buttons">
-            <a class="action-btn" href="mailto: hanjoseph11@gmail.com">Email</a>
+            You can read more about me <a class="inlink" href="about.html">here</a>, and you can check out my selected works (that focus more on UI/UX) <a class="inlink" href="index.html#projects">here</a>.
+            <!-- <a class="action-btn" href="mailto: hanjoseph11@gmail.com">Email</a>
             <a class="action-btn" href="https://www.linkedin.com/in/peperojo/">LinkedIn</a>
             <a class="action-btn" href="https://www.instagram.com/pepero_jo/">Instagram</a>
-            <a class="action-btn" href="https://www.youtube.com/channel/UCwSSVGD49UkQRg7FlVozeHA">YouTube</a>
-
+            <a class="action-btn" href="https://www.youtube.com/channel/UCwSSVGD49UkQRg7FlVozeHA">YouTube</a> -->
           </div>
         </div>
         <div class="col-sm-6 align-self-center">
@@ -118,10 +119,14 @@
 
       <hr id="projects">
 
+      <!-- PROJECT FILTER -->
 
       <div class="filter-row row justify-content-center">
-        <div class="filter-col col-sm-8 col-sm-12 text-center" id="">
-          <div class="accent-text">selected works</div>
+        <div class="filter-col col-sm-8 col-sm-12 text-center" id="filterBtnContainer">
+          <button class="filter-btn active" onclick="filterSelection('all')"> All</button>
+          <button class="filter-btn" onclick="filterSelection('typeUIUX')"> UI/UX</button>
+          <button class="filter-btn" onclick="filterSelection('typeDEV')"> Dev</button>
+          <button class="filter-btn" onclick="filterSelection('typeDESIGN')"> Design</button>
         </div>
       </div>
 
@@ -130,32 +135,9 @@
       <!--  START OF PROJECTS -->
       <div id="project-list">
 
-        <div class="project-row row typeDEV typeUIUX justify-content-center">
-          <div class="project-col col-sm-6 align-self-center">
-            <div class="project-title">
-              M-Lab
-            </div>
-            <div class="project-header">
-              mobile computing lab
-            </div>
-            <div class="project-desc">
-              At Notre Dame’s Mobile Computing Lab (m-lab), I was tasked to help code and debug an undergoing iOS application, 'koios,' that collects and calculates various user data to be used in Parkinson’s disease analysis and studies. The application serves as a hub of surveys and a data-collecting tool for research studies outside of Parkinson’s disease as well. The application was designed and developed in Xcode. I assisted in revamping the UI/UX of the application for easier navigation and better accessibility. I also helped redesign the logo and website.
-            </div>
-            <div class="project-buttons">
-              <a class="action-btn" href="https://koiosplatform.com/">koiosplatform.com</a>
-            </div>
-          </div>
-
-          <div class="col-sm-6 align-self-center">
-            <img src="img/projects/mlab.png" alt="" class="img-fluid img-rounded img-center img-shadow">
-          </div>
-
-          <hr class="project-divider">
-        </div>
-
         <!-- Moducam  -->
-        <!-- <div class="project-row row typeDESIGN justify-content-center"> -->
-          <!-- <div class="project-col col-sm-6 align-self-center">
+        <div class="project-row row typeDESIGN justify-content-center">
+          <div class="project-col col-sm-6 align-self-center">
             <div class="project-title">
               Modular Camera
             </div>
@@ -164,7 +146,7 @@
             </div>
             <div class="project-desc">
               Modular camera is a new way to envision cameras. Consumers have been forced to used certain 'presets' of cameras, but what if they were
-              given the opportunity to format them to their preference. Currently working with Teaching Scholar <a href="https://www.instagram.com/hectorius_/" target="" class="">Hector Silva</a>
+              given the opportunity to format them to their preference. Currently working with Teaching Scholar <a class="inlink" href="https://www.instagram.com/hectorius_/" target="" class="">Hector Silva</a>
               on this project.
             </div>
             <div class="project-buttons">
@@ -176,10 +158,10 @@
             <img src="img/projects/moducam.jpg" alt="" class="img-fluid img-rounded img-center img-shadow">
           </div>
           <hr class="project-divider">
-        </div> -->
+        </div>
 
         <!-- Broker -->
-        <!-- <div class="project-row row typeDEV typeUIUX justify-content-center">
+        <div class="project-row row typeDEV typeUIUX justify-content-center">
           <div class="project-col col-sm-6 align-self-center">
             <div class="project-title">
               Broker
@@ -201,11 +183,11 @@
             <img src="img/projects/broker.jpg" alt="" class="img-fluid img-rounded img-center img-shadow">
           </div>
           <hr class="project-divider">
-        </div> -->
+        </div>
 
         <!--  Spark  -->
 
-        <!-- <div class="project-row row typeUIUX justify-content-center">
+        <div class="project-row row typeUIUX justify-content-center">
           <div class="project-col col-sm-6 align-self-center">
             <div class="project-title">
               Spark
@@ -226,7 +208,7 @@
           </div>
 
           <hr class="project-divider">
-        </div> -->
+        </div>
 
         <!--  Venmo  -->
 
@@ -280,7 +262,7 @@
 
         <!--  Smarter Weather  -->
 
-        <!-- <div class="project-row row typeUIUX justify-content-center">
+        <div class="project-row row typeUIUX justify-content-center">
           <div class="project-col col-sm-6 align-self-center">
             <div class="project-title">
               Weather gets better.
@@ -301,11 +283,11 @@
           </div>
 
           <hr class="project-divider">
-        </div> -->
+        </div>
 
         <!-- fictional brand -->
 
-        <!-- <div class="project-row row typeDESIGN justify-content-center">
+        <div class="project-row row typeDESIGN justify-content-center">
           <div class="project-col col-sm-6 align-self-center">
             <div class="project-title">
               Fictional Brand
@@ -327,7 +309,7 @@
           </div>
 
           <hr class="project-divider">
-        </div> -->
+        </div>
 
         <!-- desk finder -->
 
@@ -351,12 +333,12 @@
             <img src="img/projects/deskfinder2.png" alt="" class="img-fluid img-rounded img-center img-shadow">
           </div>
 
-          <!-- <hr class="project-divider"> -->
+          <hr class="project-divider">
         </div>
 
         <!-- VFX -->
 
-        <!-- <div class="project-row row typeDESIGN typeDEV justify-content-center">
+        <div class="project-row row typeDESIGN typeDEV justify-content-center">
           <div class="project-col col-sm-6 align-self-center">
             <div class="project-title">
               Vfx
@@ -381,10 +363,10 @@
           </div>
 
           <hr class="project-divider">
-        </div> -->
+        </div>
 
 
-        <!-- <div class="project-row row typeDEV typeUIUX justify-content-center">
+        <div class="project-row row typeDEV typeUIUX justify-content-center">
           <div class="project-col col-sm-6 align-self-center">
             <div class="project-title">
               Necto
@@ -406,11 +388,32 @@
           </div>
 
           <hr class="project-divider">
-        </div> -->
+        </div>
 
+        <div class="project-row row typeDEV typeUIUX justify-content-center">
+          <div class="project-col col-sm-6 align-self-center">
+            <div class="project-title">
+              M-Lab
+            </div>
+            <div class="project-header">
+              mobile computing lab
+            </div>
+            <div class="project-desc">
+              At Notre Dame’s Mobile Computing Lab (m-lab), I was tasked to help code and debug an undergoing iOS application, 'koios,' that collects and calculates various user data to be used in Parkinson’s disease analysis and studies. The application serves as a hub of surveys and a data-collecting tool for research studies outside of Parkinson’s disease as well. The application was designed and developed in Xcode. I assisted in revamping the UI/UX of the application for easier navigation and better accessibility. I also helped redesign the logo and website.
+            </div>
+            <div class="project-buttons">
+              <a class="action-btn" href="https://koiosplatform.com/">koiosplatform.com</a>
+            </div>
+          </div>
 
+          <div class="col-sm-6 align-self-center">
+            <img src="img/projects/mlab.png" alt="" class="img-fluid img-rounded img-center img-shadow">
+          </div>
 
-        <!-- <div class="project-row row typeDEV typeUIUX justify-content-center">
+          <hr class="project-divider">
+        </div>
+
+        <div class="project-row row typeDEV typeUIUX justify-content-center">
           <div class="project-col col-sm-6 align-self-center">
             <div class="project-title">
               Feather
@@ -431,9 +434,9 @@
           </div>
 
           <hr class="project-divider">
-        </div> -->
+        </div>
 
-        <!-- <div class="project-row row typeDEV justify-content-center">
+        <div class="project-row row typeDEV justify-content-center">
           <div class="project-col col-sm-6 align-self-center">
             <div class="project-title">
               Align bulb
@@ -444,31 +447,24 @@
             <div class="project-desc">
               As part of the GE Align Lighting Technology project, I collaborated with team members to develop an LED light bulb that could change its color based on the time of day or the color preference of the user. The tunable bulb was to produce both the energizing effect of the GE Align AM bulb  and the soothing effect of the GE Align PM bulb. I helped develop the backend code in MATLAB that calculates different color tones as well as created the GUI that allows users to pick their color choice from CIE color space. I also assisted in designing the circuit using an Arduino breadboard.
             </div>
-
+            <!-- <div class="project-buttons">
+              <a class="action-btn" href="">Github</a>
+              <a class="action-btn" href="">Case study</a>
+              <a class="action-btn" href="">View more</a>
+            </div> -->
           </div>
 
           <div class="col-sm-6 align-self-center">
             <div id="player1" data-plyr-config='{ "controls":["play-large"] }' data-plyr-provider="youtube" data-plyr-embed-id="PaCzTv-gPG4"></div>
           </div>
 
-        </div> -->
-
-
-        <div class="project-row row  justify-content-center">
-          <div class="filter-col col-sm-8 col-sm-12 text-center" id="filterBtnContainer">
-            <a href="past.html" class="action-btn2">View More Works</a>
-          </div>
-
-
-          <!-- <hr class="project-divider"> -->
+          <hr class="project-divider">
         </div>
 
     </div>
-
-
     <!--  END OF PROJECTS -->
 
-    <hr class="reg-divider">
+
       <!-- QUOTES -->
       <blockquote class="blockquote text-center quoteClass">
         <p class="mb-0 project-header">Whatever you value, be committed to it and let nothing distract you from this goal. </p>
