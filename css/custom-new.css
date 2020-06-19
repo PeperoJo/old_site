@@ -83,7 +83,7 @@ body{
 .accent-text {
   display: inline-block;
   height: 38px;
-  padding: 0 25px;
+  /*padding: 0 25px;*/
   color: #454549;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
@@ -162,6 +162,15 @@ body{
 
 a {
   color: #0e27e4;
+}
+
+a:hover {
+  color: #0e27e4;
+}
+
+.typewrite {
+  text-decoration:none !important;
+  color: black;
 }
 
 .inlink {
@@ -279,4 +288,17 @@ a {
   height: 2px;
   background: #010101;
   width: 0%;
+}
+
+.school {
+  font-weight: 600;
+  display:inline;
+}
+
+.course {
+  font-size: 11px;
+  opacity: 90%;
+  padding-left: 13px;
+  padding-bottom: 15px;
+  padding-top: 3px;
 }
