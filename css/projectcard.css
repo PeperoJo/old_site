@@ -1,0 +1,36 @@
+.pCard {
+  background-color: black;
+  overflow: hidden;
+}
+
+
+
+.pCardImgMobile {
+  position: absolute;
+  /* height: 175%; */
+  width: 250px;
+  /* width: 75%; */
+  /* bottom: -175px; */
+  top: 10px;
+  vertical-align: middle;
+  left: 0;
+  right: 0;
+}
+
+.project-img {
+  min-height: 250px;
+}
+
+.pCardImgLandscrape {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 90%;
+  left: 0;
+  right: 0;
+}
+
+#venmo_card {
+  background-color: #3d95ce;
+}
