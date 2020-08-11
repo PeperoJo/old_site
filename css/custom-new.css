@@ -338,3 +338,9 @@ a:hover {
   padding-bottom: 15px;
   padding-top: 3px;
 }
+
+#mobilevisitor {
+  z-index: 9999;
+  position: fixed;
+  bottom: 0;
+}
