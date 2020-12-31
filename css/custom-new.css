@@ -348,3 +348,25 @@ a:hover {
   position: fixed;
   bottom: 0;
 }
+
+.bg-cfa {
+  background-color: #E51636 !important;
+}
+
+.bg-portfolio {
+  background: linear-gradient(-45deg, #000000, #0D324D , #7F5A83);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
