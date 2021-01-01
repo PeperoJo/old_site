@@ -370,3 +370,16 @@ a:hover {
 		background-position: 0% 50%;
 	}
 }
+
+.loader-caption {
+  position: fixed;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 38px;
+  text-transform: uppercase;
+  top: 57.5%;
+  left: 0;
+  right: 0;
+}
